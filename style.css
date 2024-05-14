@@ -60,6 +60,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .profil {
+    position: relative;
     display: flex;
     align-items: center;
 }
@@ -80,7 +81,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .more-img {
-    margin-left: 148px;
+    position: absolute;
+    right: 0;
+    top: 50%;
 }
 
 .opisanie {
