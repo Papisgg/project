@@ -141,12 +141,23 @@
                 </div>
 
                 <div class="btn-anketa">
-                    <div class="anket-btn">
-                        <a class="anket-link" href="">Написать</a>
-                    </div>
+                    <button class="anket-btn anket-link" id="write-btn">
+                        Написать
+                    </button>
 
                     <div class="anket-btn izbr">
                         <img class="izbr-img" src="img/star.png" alt="">
+                    </div>
+
+                    <div class="modal" id="modal">
+                        <div class="modal-write">
+                            <form>
+                                <input class="write-input" type="text" placeholder="Написать">
+                                <button class="write-btn-close" type="submit" id="close">
+                                    <img src="img/write-icon.png" alt="">
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
