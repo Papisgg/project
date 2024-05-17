@@ -177,7 +177,8 @@ h1, h2, h3, h4, h5, h6, p {
 
     position: fixed;
     bottom: 25px;
-    left: 55px;
+    left:50%;
+    transform:translate(-50%,-50%);
 
     border-radius: 25px;
 
@@ -207,4 +208,58 @@ h1, h2, h3, h4, h5, h6, p {
 
 .active {
     background-color: #1B2028;
+}
+
+.modal {
+    width: 100%;
+    height: 1000vh;
+    background: rgba( 0, 0, 0, .7);
+
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal-write{
+    height: 115px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 16px;
+
+    position: fixed;
+    bottom: 0;
+    background-color: #141A21;
+}
+
+.modal.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.write-input {
+    height: 50px;
+    width: 90%;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding-left: 10px;
+
+    background-color: #273141;
+}
+
+.write-btn-close {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 43px;
+    right: 10px;
+    padding: 0;
+    border: none;
+}
+
+.write-btn-close img{
+    width: 35px;
 }
